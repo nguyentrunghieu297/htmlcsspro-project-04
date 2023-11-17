@@ -3,14 +3,193 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Project 4</title>
+        <title>Lucy - Care Services</title>
         <!-- Favicon -->
+        <link
+            rel="apple-touch-icon"
+            sizes="72x72"
+            href="./assets/favicon/apple-touch-icon.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="32x32"
+            href="./assets/favicon/favicon-32x32.png"
+        />
+        <link
+            rel="icon"
+            type="image/png"
+            sizes="16x16"
+            href="./assets/favicon/favicon-16x16.png"
+        />
+        <link rel="manifest" href="./assets/favicon/site.webmanifest" />
+        <link
+            rel="mask-icon"
+            href="./assets/favicon/safari-pinned-tab.svg"
+            color="#5bbad5"
+        />
+        <meta name="msapplication-TileColor" content="#00a300" />
+        <meta name="theme-color" content="#ffffff" />
         <!-- Font Embed -->
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&family=Sora:wght@600;700;800&display=swap"
+            rel="stylesheet"
+        />
         <!-- CSS -->
         <link rel="stylesheet" href="assets/css/reset.css" />
         <link rel="stylesheet" href="assets/css/styles.css" />
     </head>
     <body>
-        <h1>Project 4</h1>
+        <!-- Header -->
+        <header class="header">
+            <div class="container">
+                <div class="header__inner">
+                    <a href="#!" class="header__logo">
+                        <img
+                            src="./assets/icon/logo-icon.svg"
+                            alt="Lucy"
+                            class="header__logo-img"
+                        />
+                        <span class="header__logo-name">Lucy</span>
+                    </a>
+                    <div class="navbar__menu">
+                        <ul class="navbar__list">
+                            <a href=""><li class="navbar__item">Home</li></a>
+                            <a href=""><li class="navbar__item">About</li></a>
+                            <a href="">
+                                <li class="navbar__item">Services & Rates</li>
+                            </a>
+                            <a href="">
+                                <li class="navbar__item">Reviews</li>
+                            </a>
+                            <a href="">
+                                <li class="navbar__item">Contacts us</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="header__cta">
+                        <a href="" class="header__signin">Sign in</a>
+                        <a href="" class="btn header__signup">Sign up</a>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Hero -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero__inner">
+                    <!-- Hero media -->
+                    <div class="hero__media">
+                        <!-- Big image -->
+                        <div class="hero__img-wrap">
+                            <img
+                                src="./assets/img/pet-01.png"
+                                alt=""
+                                class="hero__img"
+                            />
+                            <!-- Decorators -->
+                            <img
+                                src="./assets/img/deco01.svg"
+                                alt=""
+                                class="hero__deco hero__deco-right"
+                            />
+                            <img
+                                src="./assets/img/deco02.svg"
+                                alt=""
+                                class="hero__deco hero__deco-left"
+                            />
+                        </div>
+                        <!-- Small image -->
+                        <div class="hero__img-wrap hero__img-wrap-small">
+                            <img
+                                src="./assets/img/pet-02.png"
+                                alt=""
+                                class="hero__img-small"
+                            />
+                        </div>
+                        <!-- Hero small menu -->
+                        <div class="hero__list">
+                            <div class="hero__list-item">
+                                <img
+                                    src="./assets/img/pet-03.png"
+                                    alt=""
+                                    class="hero__list-item__thumb"
+                                />
+                                <div class="hero__list-item__info">
+                                    <p class="hero__list-item__title">
+                                        Pet Health
+                                    </p>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                </div>
+                            </div>
+                            <div class="hero__list-item__separate"></div>
+                            <div class="hero__list-item">
+                                <img
+                                    src="./assets/img/pet-04.png"
+                                    alt=""
+                                    class="hero__list-item__thumb hero__list-item__thumb--blue"
+                                />
+                                <div class="hero__list-item__info">
+                                    <p class="hero__list-item__title">
+                                        Pet Care
+                                    </p>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                    <div
+                                        class="hero__list-item__skeleton"
+                                    ></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Hero content -->
+                    <section class="hero__content">
+                        <h1 class="hero__heading">
+                            Established & Trusted Pet Care Service
+                        </h1>
+                        <p class="hero__desc">
+                            Discover a wide variety of Pawsit ive services to
+                            choose from, including daycare, private walks,
+                            office duty and spa.
+                        </p>
+                        <div class="hero__cta">
+                            <a href="" class="btn hero__book-btn">
+                                <span class="hero__book-btn-text">
+                                    Book a Meet
+                                </span>
+                                <span class="btn__icon">
+                                    <svg
+                                        class="btn__icon-svg"
+                                        width="9"
+                                        height="8"
+                                        viewBox="0 0 9 8"
+                                        fill="none"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                    >
+                                        <path
+                                            d="M3.48584 1.5L5.98584 4L3.48584 6.5"
+                                            stroke="currentcolor"
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                        />
+                                    </svg>
+                                </span>
+                            </a>
+                            <a href="" class="hero__call-btn">
+                                Schedule a Call
+                            </a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
     </body>
 </html>

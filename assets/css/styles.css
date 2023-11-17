@@ -3,8 +3,7 @@
 }
 
 :root {
-    --primary-color: rgba(20, 60, 60, 1);
-    --secondary-color: rgba(226, 237, 223, 1);
+    --primary-color: #ff5b2e;
 }
 
 html {
@@ -13,6 +12,17 @@ html {
 
 body {
     font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    background-color: #fffaf5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: "Sora", sans-serif;
 }
 
 /* ===== Common ===== */
@@ -35,7 +45,7 @@ button {
 }
 
 .container {
-    width: 1140px;
+    width: 1170px;
     max-width: calc(100% - 48px);
     margin: 0 auto;
 }
@@ -46,11 +56,341 @@ button {
     justify-content: center;
 }
 
-.btn {
+.btn:hover {
     cursor: pointer;
 }
 
-.btn:hover {
-    cursor: pointer;
-    opacity: 0.85;
+.btn {
+    --height: 56px;
+    display: inline-block;
+    min-width: 130px;
+    text-align: center;
+    height: var(--height);
+    line-height: var(--height);
+    border-radius: 999px;
+    transition: background-color, color;
+    transition-duration: 0.2s;
 }
+
+.btn--primary {
+    color: #fff;
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+/* ===== HEADER ===== */
+.header {
+    padding: 26px 0;
+}
+
+.header__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header__logo-name {
+    color: #000958;
+    font-family: Sora;
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+.navbar__list {
+    display: flex;
+}
+
+.navbar__item {
+    padding: 8px 18px;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: text-shadow 0.25s;
+}
+
+.navbar__item:hover {
+    color: #000958;
+    text-shadow: 0px 0px 0.5px #000958;
+}
+
+.header__signin {
+    padding: 8px 12px;
+    color: #5e6085;
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: text-shadow 0.2s, color 0.2s;
+}
+
+.header__signin:hover {
+    color: #000958;
+    text-shadow: 0px 0px 0.5px #000958;
+}
+
+.header__signup {
+    --height: 50px;
+    margin-left: 12px;
+    color: #000958;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 1px solid #000958b3;
+}
+
+.header__signup:hover {
+    background-color: #000958;
+    color: #fff;
+}
+/* ===== HERO ===== */
+
+.hero {
+    margin-top: 74px;
+}
+
+.hero__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero__media {
+    padding-bottom: 94px;
+    position: relative;
+    display: flex;
+}
+
+.hero__img-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 388px;
+    height: 488px;
+    border-radius: 16px;
+    background: #fe997b;
+    border: 3px solid #fff;
+}
+
+.hero__img {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: inherit;
+}
+
+.hero__deco {
+    position: absolute;
+    z-index: -1;
+}
+
+.hero__deco-left {
+    left: -58px;
+    bottom: 10px;
+}
+
+.hero__deco-right {
+    top: 16px;
+    right: -42px;
+}
+
+.hero__img-wrap-small {
+    margin-left: -24px;
+    margin-bottom: -58px;
+    align-self: flex-end;
+    width: 186px;
+    height: 244px;
+    background: #faa7ad;
+    border: 2px solid #fcdee0;
+}
+
+.hero__img-small {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.hero__list {
+    position: absolute;
+    top: 426px;
+    left: 129px;
+    width: 254px;
+    height: 156px;
+    padding: 18px 14px;
+    border-radius: 10px;
+    background: #fff;
+    box-shadow: -17px 14px 68px -4px rgba(207, 174, 132, 0.25);
+}
+
+.hero__list-item__thumb {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    background-color: #fec23f;
+    border-radius: 10px;
+}
+
+.hero__list-item__thumb--blue {
+    background: #c6e2fa;
+}
+
+.hero__list-item {
+    display: flex;
+}
+
+.hero__list-item__info {
+    margin-left: 10px;
+}
+
+.hero__list-item__title {
+    color: #181e52;
+    font-family: Sora, sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.hero__list-item__skeleton {
+    margin-top: 6px;
+    width: 118px;
+    height: 4px;
+    border-radius: 10px;
+    opacity: 0.08;
+    background: #000958;
+}
+
+.hero__list-item__skeleton:last-child {
+    width: 39px;
+}
+
+.hero__list-item__separate {
+    margin: 20px 0;
+    width: 100%;
+    height: 2px;
+    background: #f2f2f2;
+    border-radius: 99px;
+}
+
+.hero__content {
+    width: 44.1%;
+}
+
+.hero__heading {
+    color: #000958;
+    font-size: 6.6rem;
+    font-weight: 800;
+    line-height: 1.15;
+}
+
+.hero__desc {
+    margin-top: 24px;
+    width: 75%;
+    color: #656689;
+    font-size: 1.6rem;
+    font-weight: 400;
+    line-height: 1.87;
+}
+
+.hero__cta {
+    margin-top: 38px;
+}
+
+.hero__book-btn {
+    display: inline-flex;
+    align-items: center;
+    --height: 60px;
+    padding: 0 30px;
+    color: #fff;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 600;
+    border-radius: 31px;
+    background: #ff5b2e;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+}
+
+.hero__book-btn:hover {
+    color: #ff5b2e;
+    background: #fffaf5;
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.6);
+}
+
+.hero__book-btn:hover .btn__icon {
+    background-color: #ff5b2e;
+}
+
+.hero__book-btn:hover .btn__icon-svg {
+    color: #fff;
+}
+
+.btn__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.btn__icon-svg {
+    color: #fd5056;
+    transition: 0.2s;
+}
+
+.hero__call-btn {
+    position: relative;
+    margin-left: 24px;
+    color: #000958;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.hero__call-btn::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 0;
+    height: 1px;
+    display: inline-block;
+    background: #fd5056;
+    transition: 300ms;
+}
+
+.hero__call-btn::before {
+    content: "Schedule a Call";
+    position: absolute;
+    display: flex;
+    justify-content: flex-end;
+    color: #fd5056;
+    right: 0;
+    top: 4px;
+    width: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    transition: 300ms;
+}
+
+.hero__call-btn:hover::before {
+    left: 0;
+    width: 100%;
+    justify-content: flex-start;
+}
+
+.hero__call-btn:hover::after {
+    left: 0;
+    width: 100%;
+}
+
+/* ===== ABOUT ===== */
+/* ===== SERVICES ===== */
+/* ===== STAFF ===== */
+/* ===== BUY OPTION ===== */
+/* ===== REVIEWS ===== */
+/* ===== BLOG ===== */
+/* ===== FOOTER ===== */
